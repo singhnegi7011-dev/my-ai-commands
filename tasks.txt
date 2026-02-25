@@ -1,2 +1,4 @@
-# सीधा रिपोर्ट देखो कि क्या मिला
-tail -n 20 results.txt && echo "--- TOTAL REWARDS ANALYZED ---" && ls -lh final_report.txt
+# स्टेप 1: अब तक मिले रिवॉर्ड्स की गिनती करें
+echo "TOTAL TARGETS CAPTURED:" && wc -l results.txt
+# स्टेप 2: फाइनल रिपोर्ट का प्रीव्यू देखें
+echo "FINAL REPORT PREVIEW:" && head -n 15 final_report.txt
