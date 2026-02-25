@@ -1,1 +1,1 @@
-echo "import os; print('--- AI COMMAND CENTER ACTIVE ---'); print('1. Gemini: Connected'); print('2. OpenAI: Ready for Key'); print('3. Claude: Ready for Key')" > ai_hub.py && python3 ai_hub.py && echo "TASK_COMPLETED_SUCCESSFULLY" > final_status.txt
+echo "import platform, psutil; print('--- SYSTEM HEALTH REPORT ---'); print(f'OS: {platform.system()}'); print(f'CPU: {platform.processor()}'); print('AI HUB STATUS: STANDBY')" > check.py && python3 check.py
