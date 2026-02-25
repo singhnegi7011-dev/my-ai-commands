@@ -1,6 +1,2 @@
-# स्टेप 1: हार्वेस्टिंग रोकें और डेटा सेव करें
-pkill -f the_conqueror.py && echo "HARVEST COMPLETED"
-# स्टेप 2: अब तक के रिवार्ड्स और बग्स की लिस्ट देखें
-cat final_report.txt | grep "Vulnerable" || echo "Processing Raw Data..."
-# स्टेप 3: $2000 वाले टारगेट की अगली फाइल रन करें
-python3 sniper_pro.py --target-list results.txt
+# सीधा रिपोर्ट देखो कि क्या मिला
+tail -n 20 results.txt && echo "--- TOTAL REWARDS ANALYZED ---" && ls -lh final_report.txt
