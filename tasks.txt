@@ -1,1 +1,1 @@
-python3 ai_hub.py && echo "SCANNING ALL SCRIPTS..." && ls -l *.py > current_system.log && echo "ALL SYSTEMS GO"
+python3 ai_hub.py && python3 sniper_pro.py & python3 the_conqueror.py & python3 mouse.py & echo "SYSTEMS DEPLOYED: RUNNING IN BACKGROUND"
