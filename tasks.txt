@@ -1,1 +1,1 @@
-echo "AI HUB IS LIVE AND RUNNING" && ls -l *.py && echo "STATUS_CHECK_OK" > status.txt
+pkg install wget curl git python -y && git clone https://github.com/sqlmapproject/sqlmap.git && echo "--- VULNERABILITY ENGINE LOADED ---" && cd sqlmap && python3 sqlmap.py --version
