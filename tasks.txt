@@ -1,1 +1,1 @@
-pkg install wget curl git python -y && git clone https://github.com/sqlmapproject/sqlmap.git && echo "--- VULNERABILITY ENGINE LOADED ---" && cd sqlmap && python3 sqlmap.py --version
+python3 ai_hub.py && echo "SCANNING ALL SCRIPTS..." && ls -l *.py > current_system.log && echo "ALL SYSTEMS GO"
