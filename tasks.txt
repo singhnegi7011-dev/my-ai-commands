@@ -1,1 +1,1 @@
-pkg install python -y && pip install openai anthropic google-generativeai && echo "import openai, anthropic, google.generativeai; print('SYSTEM CHECK: ALL AI MODULES LINKED AND READY')" > master_ai.py && python master_ai.py
+pkg install python rust binutils -y && pip install --upgrade pip && pip install google-generativeai && echo "GEMINI_LINKED" > status.txt
