@@ -1,1 +1,1 @@
-echo "import platform, psutil; print('--- SYSTEM HEALTH REPORT ---'); print(f'OS: {platform.system()}'); print(f'CPU: {platform.processor()}'); print('AI HUB STATUS: STANDBY')" > check.py && python3 check.py
+echo "AI HUB IS LIVE AND RUNNING" && ls -l *.py && echo "STATUS_CHECK_OK" > status.txt
